@@ -1,0 +1,48 @@
+body{
+    width: 100%;
+}
+#btn-card{
+    color: rgb(229, 219, 219);
+    border: solid white;
+}
+#back-color{
+    background-color: rgb(46, 55, 62);
+    color: azure;
+}
+#FormTextArea{
+    height: 4rem;
+}
+.ConvOrador, h3, h2 {
+    
+    justify-content: center;
+    text-align: center;
+}
+#btn{
+    background-color: rgb(140, 196, 55);
+   
+}
+#footer{
+    height: 4rem;
+    width: 100%;
+    color: white;
+    background-color: rgb(29, 69, 94);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+#titleCard{
+    text-decoration: none;
+    color: black;
+}
+
+#carrouselText{
+display: flex;
+margin-bottom: 10rem;
+margin-right: 0;
+color: whitesmoke;
+   
+}
+#btnCarrousel{
+    text-shadow: black 2px 3px 2px;
+}
