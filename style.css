@@ -46,3 +46,14 @@ color: whitesmoke;
 #btnCarrousel{
     text-shadow: black 2px 3px 2px;
 }
+#btnBorrar, #btnResumen{
+    background-color: rgb(140, 196, 55);
+    margin: auto;
+    width: 18rem;
+    height: auto;
+   
+    
+}
+#btnResumen{
+    margin-left:0 ;
+}
