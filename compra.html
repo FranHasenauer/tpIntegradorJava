@@ -19,7 +19,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-sm " id="back-color">
       <div class="container">
-        <a class="navbar-brand text-light fs-6 text" href="#">
+        <a class="navbar-brand text-light fs-6 text" href="index.html">
           <img
             src="asset/codoacodo.png"
             alt="Logo"
@@ -49,7 +49,7 @@
               <a
                 class="nav-link active text-white fs-6 fw-semibold"
                 aria-current="page"
-                href="#"
+                href="index.html"
                 >La conferencia</a
               >
             </li>
@@ -77,13 +77,36 @@
         </div>
       </div>
     </nav>
+<!-- Categorias -->
+<div class="container-xl container-md container-sm d-flex justify-content-center">
+  <div class="estudiante">
+    <h6 class="fw-bold">Estudiante</h6>
+    <p><small>Tiene un descuento</small></p><br>
+    <p>80%</p>
+    <p class="text-body-secondary fs-6 mb-0"><small>*presentar docuementacion</small></p>
+  </div>
+  <div class="trainee">
+    <h6 class="fw-bold">Trainee</h6>
+    <p><small>Tiene un descuento</small></p><br>
+    <p>50%</p>
+    <p class="text-body-secondary fs-6 mb-0"><small>*presentar docuementacion</small></p>
+  </div>
+  <div class="junior">
+    <h6 class="fw-bold">Junior</h6>
+    <p><small>Tiene un descuento</small></p><br>
+    <p>15%</p>
+    <p class="text-body-secondary fs-6 mb-0"><small>*presentar docuementacion</small></p>
+  </div>
 
+</div>
 
 
 
 
 
     <!-- Formulario -->
+    <h6 class="text-lg-center text-md-center text-sm-center text-center mt-2"><small>VENTA</small></h6>
+    <h1 class="text-lg-center text-md-center text-sm-center text-center">VALOR DE TICKET $ 200</h1>
     <div class="container mt-3">
       <form>
         <div class="row">
@@ -121,12 +144,18 @@
           </div>
           <div class="col-2"></div>
           <!-- Total a pagar -->
+          <div class="d-grid col-8 bg-info-subtle" id="divPagar">
+           <p>
+            Total a pagar: $ <p id="totalPagar"></p>
+           </p> 
+          </div>
+          </div>
           </div>
         </div>
       </form>
       <!-- Boton Resumen y borrar -->
-      <div class="d-inline-grid col-2 m-0 p-0"></div>
-      <div class="d-inline-flex justify-content-center col-8">
+      <div class="d-inline-grid col-2 m-0 p-0 mt-2"></div>
+      <div class="d-inline-flex justify-content-center col-8 mt-4">
         <button class=" btn btn-primary" type="button" id="btnBorrar">Borrar</button>
         <button class=" btn btn-primary" type="button" id="btnResumen">Resumen</button>
       </div>

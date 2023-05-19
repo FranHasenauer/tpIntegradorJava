@@ -1,4 +1,6 @@
 body{
+    margin: 0;
+    padding: 0;
     width: 100%;
 }
 #btn-card{
@@ -57,3 +59,38 @@ color: whitesmoke;
 #btnResumen{
     margin-left:0 ;
 }
+
+#divPagar{
+   height: 3rem;
+   padding-top: 1rem;
+   padding-bottom: 1,5rem;
+   padding-left: 1rem;
+   }
+   .estudiante, p{
+    padding: 0;
+    margin: 0;
+   }
+   .estudiante{
+    padding: 1rem;
+    border: solid rgb(6, 41, 148) 2px;
+    box-shadow: 1px 2px 5px black;
+    text-align: center;
+    margin-right: 1rem;
+    margin-top: 1rem;
+   }
+   .trainee{
+    padding: 1rem;
+    border: solid rgb(0, 128, 255) 2px;
+    box-shadow: 1px 2px 5px black;
+    text-align: center;
+    margin-right: 1rem;
+    margin-top: 1rem;
+   }
+   .junior{
+    padding: 1rem;
+    border: solid rgb(190, 205, 130) 2px;
+    box-shadow: 1px 2px 5px black;
+    text-align: center;
+    margin-right: 1rem;
+    margin-top: 1rem;
+   }
