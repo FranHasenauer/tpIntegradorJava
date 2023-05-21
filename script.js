@@ -23,17 +23,21 @@ function resumen() {
   total = 200 * cant - 200 * cant * descuento();
   document.getElementById("totalPagar").innerHTML =
     `Total a pagar: $ ` + total + ` te ahorraste: ` + 200 * cant * descuento();
-  alert(nom + " " + ape + ` gracias por tu compra... `);
-  alert(
-    "te ahorraste: $" +
-      200 * cant * descuento() +
-      " el total a pagar es: $" +
-      total
-  );
+  if (nom != "" && ape != "" && cant > 0) {
+    alert(nom + " " + ape + ` gracias por tu compra... `);
+    alert(
+      "te ahorraste: $" +
+        200 * cant * descuento() +
+        " el total a pagar es: $" +
+        total
+    );
+  } else {
+    alert("Corrobore si los datos ingresados son correctos");
+  }
 }
 function borrar() {
-  document.getElementById("nombre").value = " ";
-  document.getElementById("apellido").value = " ";
-  document.getElementById("cantidad").value = " ";
-  document.getElementById("email").value = " ";
+  document.getElementById("nombre").value = "";
+  document.getElementById("apellido").value = "";
+  document.getElementById("cantidad").value = "";
+  document.getElementById("email").value = "";
 }
