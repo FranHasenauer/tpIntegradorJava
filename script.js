@@ -22,20 +22,24 @@ function resumen() {
   cant = document.getElementById("cantidad").value;
   total = 200 * cant - 200 * cant * descuento();
   if (nom != "" && ape != "" && cant > 0) {
-    alert(nom + " " + ape + ` gracias por tu compra... `);
-    alert(
-      "te ahorraste: $" +
-        200 * cant * descuento() +
-        " el total a pagar es: $" +
-        total
-    );
+    swal({
+      icon: "success",
+      text:
+        `Gracias ` +
+        nom +
+        ` ` +
+        ape +
+        ` Te enviaremos un email con los datos de la transaccion `,
+      button: "cerrar",
+    });
+
     document.getElementById("totalPagar").innerHTML =
       `Total a pagar: $ ` +
       total +
       ` te ahorraste: ` +
       200 * cant * descuento();
   } else {
-    alert("Corrobore los datos, por favor");
+    swal("Corrobore los datos, por favor");
   }
 }
 function borrar() {
