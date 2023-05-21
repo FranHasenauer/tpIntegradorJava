@@ -24,12 +24,8 @@ function resumen() {
   if (nom != "" && ape != "" && cant > 0) {
     swal({
       icon: "success",
-      text:
-        `Gracias ` +
-        nom +
-        ` ` +
-        ape +
-        ` Te enviaremos un email con los datos de la transaccion `,
+      title: `Gracias ` + nom + ` ` + ape,
+      text: ` Te enviaremos un email con los datos de la transaccion `,
       button: "cerrar",
     });
 
@@ -39,7 +35,11 @@ function resumen() {
       ` te ahorraste: ` +
       200 * cant * descuento();
   } else {
-    swal("Corrobore los datos, por favor");
+    swal(
+      "Corrobore los datos por favor",
+      "notamos un error en el formulario",
+      "error"
+    );
   }
 }
 function borrar() {
@@ -48,3 +48,4 @@ function borrar() {
   document.getElementById("cantidad").value = "";
   document.getElementById("email").value = "";
 }
+/*  */
