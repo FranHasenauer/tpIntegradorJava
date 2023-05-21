@@ -42,7 +42,7 @@ body{
 display: flex;
 margin-bottom: 10rem;
 margin-right: 0;
-color: whitesmoke;
+color: rgb(255, 255, 255);
    
 }
 #btnCarrousel{
@@ -53,11 +53,23 @@ color: whitesmoke;
     margin: auto;
     width: 18rem;
     height: auto;
+    text-shadow: black 1px 2px 1px;
+    
    
     
 }
-#btnResumen{
-    margin-left:0 ;
+#btnResumen:hover {
+   background-color: rgb(104, 165, 11);
+   display: inline-block;
+   position: relative;
+   transition: 0.3s;
+    box-shadow:3px 5px 15px rgb(44, 95, 68) ;
+   
+}
+#btnBorrar:hover{
+    background-color: rgb(104, 165, 11);
+    transition: 0.3s;
+    box-shadow:3px 5px 15px rgb(44, 95, 68) ;
 }
 
 #divPagar{
@@ -93,4 +105,28 @@ color: whitesmoke;
     text-align: center;
     margin-right: 1rem;
     margin-top: 1rem;
+    
+   }
+   .btn{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 1.0s;
+    
+   }
+   .junior:hover{
+    transform: translate(2px,5px);
+    transition: 0.3s;
+    border: solid rgb(127, 154, 15);
+    
+   }
+   .estudiante:hover{
+    transform: translate(2px,5px);
+    transition: 0.3s;
+    border: solid rgb(2, 18, 65);
+   }
+   .trainee:hover{
+    transform: translate(2px,5px);
+    transition: 0.3s;
+    border: solid rgb(2, 68, 134);
    }
