@@ -47,5 +47,6 @@ function borrar() {
   document.getElementById("apellido").value = "";
   document.getElementById("cantidad").value = "";
   document.getElementById("email").value = "";
+  document.getElementById("totalPagar").innerHTML = `Total a pagar: $ `;
 }
 /*  */
